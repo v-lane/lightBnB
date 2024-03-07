@@ -52,15 +52,6 @@ const getUserWithId = (id) => {
  * @param {{name: string, password: string, email: string}} user
  * @return {Promise<{}>} A promise to the user.
  */
-// const addUser = function (user) {
-//   const userId = Object.keys(users).length + 1;
-//   user.id = userId;
-//   users[userId] = user;
-//   return Promise.resolve(user);
-// };
-
-`INSERT INTO users (name, email, password)
-VALUES ($1, $2, $3);`
 const addUser = (user) => {
   
   return pool
